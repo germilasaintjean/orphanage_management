@@ -1,0 +1,11 @@
+<h1>Edit Admin</h1>
+<%= form_tag user_path, method: :put do  %>
+
+  UserName: <%= text_field_tag :name, params[:name],:value=> @user.username, :disabled=> "disabled" %><br/>
+  Password: <%= password_field_tag :password , nil, :required => true%><br/>
+  Password Confirmation: <%= password_field_tag :password_confirmation, nil, :required => true %><br/>
+  Current Password: <%= password_field_tag :current_password, nil, :required => true %> <br/>
+  <%= hidden_field_tag :id, @user.id %>
+  <%= submit_tag 'Update' %>
+  
+<% end %>
