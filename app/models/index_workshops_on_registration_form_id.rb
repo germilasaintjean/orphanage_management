@@ -1,2 +1,0 @@
-class IndexWorkshopsOnRegistrationFormId < ApplicationRecord
-end
