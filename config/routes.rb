@@ -1,17 +1,14 @@
 Rails.application.routes.draw do
 
+  post "wokshops/add_person"
+  get "workshops/search_person"
 
-  # get 'workshop/edit'
+  get "workshops/generate_xl_sheet"
+  post "workshops/create_xl"
 
-  # get 'workshop/update'
-
-  # get 'workshop/destroy'
-
-  # get 'users/new'
-
-  # get 'users/create'
+ 
   resources :workshops
-  # get 'users/edit'
+ 
   resources :users
   root :to => 'home#index'
   resources :registrations
