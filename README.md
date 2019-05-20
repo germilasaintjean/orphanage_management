@@ -1,26 +1,31 @@
-# README
 
- Orphanage Management 
- 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ Ruby on Rails is a full-stack web framework optimized for programmer happiness and sustainable productivity. It encourages beautiful code by favoring convention over configuration.
 
-Things you may want to cover:
 
-* Ruby version
+## Overview
+I build a complete Ruby on Rails application that manages related data through complex forms and  RESful routes.This is a "Management Orphanage System"
 
-* System dependencies
 
-* Configuration
+## For making a great Installation
+Fork and Clone
+Clone the repo $ git clone https://github.com/germilasaintjean/orphanage_management.git
 
-* Database creation
+## Switch to directory
+$ cd orphanage_management/
 
-* Database initialization
+## Execute for dependencies
+run "bundle install"
 
-* How to run the test suite
+## Seed database
+run 'rake db:migrate'
 
-* Services (job queues, cache servers, search engines, etc.)
+## Seed database
+run 'rails s' and open the link on your browser
 
-* Deployment instructions
+## About Usage
+*When you open the project you will see the welcome Page 
 
-* ...
+
+*You have the choice signup if you are new or login with your account if you get alraedy a account
+
+*when you login with you correct username and password 
