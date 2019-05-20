@@ -7,7 +7,7 @@ ruby '2.5.3'
 gem 'axlsx'
 gem "axlsx_rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
+gem 'rails'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -45,7 +45,7 @@ gem 'pry'
 gem 'mysql2'
 
 gem "table_print"
-gem "rubyzip", ">= 1.2.2"
+gem 'rubyzip2'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
