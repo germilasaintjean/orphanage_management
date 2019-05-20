@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-
+  root :to => 'home#index'
+  
   post 'workshops/add_person'
   get 'workshops/search_person'
   
@@ -17,7 +18,7 @@ post 'workshops/create_xl'
   resources :workshops
   # get 'users/edit'
   resources :users
-  root :to => 'home#index'
+
   resources :registrations
 
    get 'prints/registration_card_print'
@@ -30,7 +31,7 @@ post 'workshops/create_xl'
    get 'print_preview/community_certificate_print'
    get 'print_preview/disability_certificate_print'
 
-get '/login' => 'sessions#new'
+  get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
   # The priority is based upon order of creation: first created -> highest priority.

@@ -3,7 +3,7 @@
 
 
 ## Overview
-I build a complete Ruby on Rails application that manages related data through complex forms and  RESful routes.This is a "Management Orphanage System"
+I build a complete Ruby on Rails application that manages related data through complex forms and  RESful(REpresentational State Transfer) routes.This is a "Management Orphanage System"
 
 
 ## For making a great Installation
@@ -29,3 +29,11 @@ run 'rails s' and open the link on your browser
 *You have the choice signup if you are new or login with your account if you get alraedy a account
 
 *when you login with you correct username and password 
+
+## Resources
+* [Rails Generators](http://guides.rubyonrails.org/generators.html)
+* [Form Helpers](http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html)
+* [Form Helpers Guide](http://guides.rubyonrails.org/form_helpers.html)
+* [Collection Select](http://stackoverflow.com/questions/8907867/can-someone-explain-collection-select-to-me-in-clear-simple-terms)
+* [Sessions in Rails](http://guides.rubyonrails.org/security.html#sessions)
+* [`has_secure_password`](http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html)
