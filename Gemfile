@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# ruby '2.5.3'
+ruby '2.5.3'
 
 # gem 'axlsx', '~> 2.1.0'
 gem 'axlsx'
@@ -46,6 +46,7 @@ gem 'mysql2'
 
 gem "table_print"
 gem 'rubyzip2'
+gem 'rubyzip','~>1.2.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
@@ -70,5 +71,5 @@ end
 #   gem 'chromedriver-helper'
 # end
 
-# # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
