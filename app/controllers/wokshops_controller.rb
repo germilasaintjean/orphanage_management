@@ -1,8 +1,9 @@
 class WorkshopsController < ApplicationController
-    def new
+       def new
              #binding.pry
             @person = RegistrationForm.find_by(name: params[:name], father_or_husband_name: params[:father_or_husband_name])
         end
+
         def create
             #binding.pry
             @person = RegistrationForm.find(params[:id])
@@ -11,8 +12,10 @@ class WorkshopsController < ApplicationController
             end
             redirect_to workshops_search_person_path
         end
+
         def search_person
         end
+        
         def create_xl
            #binding.pry
            from_date= DateTime.parse(params[:from_date])

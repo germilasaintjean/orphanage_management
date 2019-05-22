@@ -1,11 +1,10 @@
-<h1>Orphanage Management</h1>
 
-<h2>Login</h2>
-
-<%= form_for :user, url: '/login' do %>
-
-  UserName: <%= text_field_tag :username %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag "Submit" %>
-
-<% end %>
+<h1 class=head>Welcome To The Orphanage Management</h1>
+<h2 class=login>Login</h2>
+    <%= form_for :user, url: '/login' do %>
+       UserName: <%= text_field_tag :username %>
+       Password: <%= password_field_tag :password %>
+        <%= submit_tag "Submit" %>
+       <% end %>
+       
+   

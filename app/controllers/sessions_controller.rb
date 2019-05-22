@@ -3,8 +3,7 @@ class SessionsController < ApplicationController
     end
   
     def create
-        user = User.authenticate(params[:username], params[:password])
-      # If the user exists AND the password entered is correct.
+      user = User.find_or_create_by(params[:user])
       if user.present?
         # Save the user id inside the browser cookie. This is how we keep the user 
         # logged in when they navigate around our website.
@@ -23,9 +22,5 @@ class SessionsController < ApplicationController
       redirect_to root_path
     end
   end
+
   
-  #   def destroy
-  #     session[:user_id] = nil
-  #     redirect_to '/'
-  #   end
-  # end

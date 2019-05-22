@@ -1,10 +1,12 @@
 class UsersController < ApplicationController
     def new
     end
-  
+  def show
+
+  end
     def create
   
-      user = User.new(user_params)#,:encrypted_password,:salt)
+      @user = User.new(user_params)#,:encrypted_password,:salt)
      
       if params[:user][:password] == params[:user][:password_confirmation] && user.save
           redirect_to login_path
