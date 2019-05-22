@@ -9,6 +9,7 @@ class CreateRegistrationForms < ActiveRecord::Migration[5.2]
       t.integer  "age",                     limit: 4
       t.string   "sex",                     limit: 45
       t.string   "father_or_husband_name",  limit: 45
+      t.string   "country",                  limit: 45
       t.string   "street",                  limit: 45
       t.string   "town_or_village_or_city", limit: 45
       t.string   "taluk",                   limit: 45

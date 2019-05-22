@@ -13,7 +13,7 @@ class RegistrationsController < ApplicationController
 			age: params[:age],
 			sex: params[:sex],
 			father_or_husband_name: params[:foh_name],
-			hno: params[:hno],
+			country: params[:country],
 			street: params[:street],
 			town_or_village_or_city: params[:town],
 			taluk: params[:taluk],

@@ -65,9 +65,9 @@
 			</div>
 		</div><br>
 		<div class="row">
-			<div class="col-md-2"><%= label_tag :HNO %></div>
+			<div class="col-md-2"><%= label_tag :Country %></div>
 			<div class="col-md-5">
-				<%= text_field_tag :hno, class: "form-control", placeholder: "hno", required: true %>
+				<%= text_field_tag :country, nil, class: "form-control", placeholder: "country", required: true %>
 			</div>
 		</div><br>
 
@@ -172,7 +172,7 @@
 		<div class="row">
 			<div class="col-md-2"><%= label_tag :Caste %></div>
 			<div class="col-md-5">
-			<%= select_tag :caste, options_for_select(["GENERAL", "SC", "ST"]), class: "form-control", placeholder: "Caste", required: true %>
+			<%= select_tag :caste, options_for_select(["Financial Aristocracy", "Industrial Bourgeoisie", "Trading Bourgeoisie", "Petty Bourgeoisie","Peasantry", "Proletariat", "Underclass"]), class: "form-control", placeholder: "Caste", required: true %>
 			</div>
 		</div><br>
 

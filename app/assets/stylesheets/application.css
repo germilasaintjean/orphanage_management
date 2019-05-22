@@ -14,8 +14,8 @@
  *= require_self
  */
 /* forms */
-/* 
-#error_explanation {
+
+/* #error_explanation {
   color: red;
   ul {
     color: red;
@@ -28,7 +28,7 @@
   .form-control {
     color: $state-danger-text;
   }
-} */
+}  */
 
 .head{
     text-align: center;
