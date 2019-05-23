@@ -4,9 +4,9 @@
 Name: <%= text_field_tag :name, params[:name],:value=> @person.name, :disabled=> "disabled" %>
 Age: <%= text_field_tag :age, params[:age],:value=> @person.age, :disabled=> "disabled" %>
 Sex: <%= text_field_tag :sex, params[:sex],:value=> @person.sex, :disabled=> "disabled" %>
-<% address = @person.hno+","+@person.street+","+@person.town_or_village_or_city+","+@person.taluk+","+@person.district+","+@person.state+","+@person.pincode.to_s+","+@person.mobile_no.to_s %> 
+<% address = @person.country+","+@person.street+","+@person.town_or_village_or_city+","+@person.taluk+","+@person.district+","+@person.state+","+@person.pincode.to_s+","+@person.mobile_no.to_s %> 
 Address: <%= text_field_tag :address, params[:address],:value=> address, :disabled=> "disabled" %>
-income: <%= text_field_tag :monthly_income, params[:monthly_income],:value=> ""Rs. "+@person.monthly_income.to_s+"/- p.m"", :disabled=> "disabled" %>
+Income: <%= text_field_tag :monthly_income, params[:monthly_income],:value %> ""Rs. "+@person.monthly_income.to_s+"/- p.m"", :disabled=> "disabled" %>
 
 </br>
 <%= form_tag '/workshops' do %> 

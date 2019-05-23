@@ -3,7 +3,7 @@
 <%= form_tag print_preview_income_certificate_print_path, :method => 'get' do %>
 Name : <%= text_field_tag :name %></br>
 
-S/o,D/o,W/ <%= text_field_tag :father_or_husband_name %></br>
+Father<%= text_field_tag :father_or_husband_name %></br>
 <%= submit_tag "Search", :name => nil %>
 
 <% end %>
