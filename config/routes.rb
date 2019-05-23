@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :bubbles
+
   root :to => "home#index"
   
   post 'workshops/add_person'

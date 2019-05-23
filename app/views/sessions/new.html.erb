@@ -1,9 +1,13 @@
+<div class="login">
+<h1Login</h1><br>
+</div>
 
-<h1 class=login>Login</h1>
-    <%= form_for :user, url: '/login' do %>
-       UserName: <%= text_field_tag :username %>
-       Password: <%= password_field_tag :password %>
-        <%= submit_tag "Submit" %>
-       <% end %>
+<div>
+<%= form_for :user, url: '/login' do %>
+ UserName: <%= text_field_tag :username %><br>
+ Password: <%= password_field_tag :password %>
+<%= submit_tag "Submit" %>
+<% end %>
+ </div>
        
    

@@ -1,10 +1,17 @@
+<div class="welcome">
 <h1> Welcome to the Orphanange Management</h1>
-<%= link_to "Change password", edit_user_path(current_user) %>
+</div>
 
+<div class="topnav">
+
+<%= link_to "Change Password", edit_user_path(current_user) %>
 <%= link_to "Registration", new_registration_path %>
 
-<%= link_to "registration_card",  prints_registration_card_print_path %>
-<%= link_to "income_certificate", prints_income_certificate_print_path %>
-<%= link_to "community_certificate", prints_community_certificate_print_path %>
-<%= link_to "disability_certificate", prints_disability_certificate_print_path %>
+<%= link_to "Registration Card",  prints_registration_card_print_path %>
+<%= link_to "Income Certificate", prints_income_certificate_print_path %>
+<%= link_to "Community Certificate", prints_community_certificate_print_path %>
+<%= link_to "Disability Certificate", prints_disability_certificate_print_path %>
 <%= link_to "workshop Division", workshops_search_person_path %>
+
+</div>
+
