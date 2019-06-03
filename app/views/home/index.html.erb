@@ -1,6 +1,5 @@
+<div class="welcomeword">
 <div class="welcome">
-<h1> Welcome to the Orphanange</h1>
-</div>
 
 <div class="topnav">
 
@@ -12,6 +11,14 @@
 <%= link_to "Community Certificate", prints_community_certificate_print_path %>
 <%= link_to "Disability Certificate", prints_disability_certificate_print_path %>
 
+<% if current_user.present? %>
+<%= link_to "Logout" , logout_path %>
+<% end %>
 
 </div>
 
+</div>
+
+<h1 class="centered"> Welcome to the Orphanange</h1>
+
+</div>
