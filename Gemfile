@@ -47,7 +47,7 @@ gem 'mysql2'
 
 gem "table_print"
 #gem 'rubyzip2'
-gem 'rubyzip','~>1.2.1'
+gem 'rubyzip','~>1.3.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
