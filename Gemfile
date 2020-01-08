@@ -46,7 +46,7 @@ gem 'pry'
 gem 'mysql2'
 
 gem "table_print"
-#gem 'rubyzip2'
+gem 'rubyzip2'
 #gem 'rubyzip'
 gem "rubyzip", ">= 1.3.0"
 # Reduces boot times through caching; required in config/boot.rb
